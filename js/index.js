@@ -4,9 +4,11 @@
 $(function(){
     $(window).scroll(function(){
         if($(this).scrollTop() == 0){
-            $(".header").removeClass("scroll_header");
+            $(".header_box").removeClass("scroll_header");
+            $(".header").css({padding:"15px 0 0"});
         }else{
-            $(".header").addClass("scroll_header");
+            $(".header_box").addClass("scroll_header");
+            $(".header").css({padding:"0"});
         }
     });
    var mySwiper = new Swiper(".banner",{

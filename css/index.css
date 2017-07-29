@@ -3,58 +3,82 @@
     width:100%;
     /*设计图的原因，不然它会放大*/
     max-width:640px;
-    /*为了更好的*/
+    /*为了更好的布局*/
     min-width:300px;
     margin:0 auto;
     background: #d3d3d3;
     height:1000px;
+    position: relative;
 }
 /*头部logo和搜索框*/
 .header{
     width:100%;
-    /*height:32px;*/
-    /*line-height: 32px;*/
-    padding:15px 2% 0;
+    height:40px;
+    line-height: 40px;
+    padding-top:10px;
     position: fixed;
+    left: 0;
     top:0;
     z-index: 9999;
 }
+.header_box{
+    width:100%;
+    max-width:640px;
+    min-width:300px;
+    margin:0 auto;
+    height: 40px;
+    padding:0 15px;
+    position: relative;
+}
 .scroll_header{
-    padding:5px;
-    background: red;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    background: rgb(201,21,35);
+    opacity: 0.85;
+    filter: alpha(opacity=85);
 }
 .header .logo{
-    width:10%;
-    height:32px;
+    width:40px;
+    height:40px;
+    margin-top: 0;
+    position: absolute;
+    left:10px;
+    top:0;
 }
 .header .logo img{
     width:100%;
     height:26px;
-    margin-top:3px;
-}
-.header .input{
-    width:76%;
-    height:32px;
-    margin-left:2%;
-    margin-right:2%;
-    background: #fff;
-    border-radius:20px;
-}
-.header .input input{
-    width:100%;
-    height:32px;
-    background: url('../images/search.png') 10px center no-repeat;
-    background-size: 20px;
-    text-indent: 36px;
-}
-.header a{
-    width:10%;
     margin-top:8px;
+}
+.header .form{
+    width:100%;
+    height:40px;
+    padding:0 50px;
+}
+.header .form .search{
+    width:30px;
+    height:16px;
+    position: absolute;
+    left:70px;
+    top:12px;
+    background: url('../images/search.png') 8px center no-repeat;
+    background-size: 20px;
+}
+.header .form input{
+    width:100%;
+    height:30px;
+    text-indent: 40px;
+    background: #fff;
+    border-radius: 20px;
+}
+.header  a.login{
+    width:50px;
+    height:40px;
+    line-height:40px;
     text-align: center;
     color:#fff;
     text-decoration: none;
+    position: absolute;
+    right:0;
+    top:0;
 }
 /*轮播图*/
 .banner .swiper-wrapper .swiper-slide img{
