@@ -134,6 +134,7 @@
 /*商品秒杀列表*/
 .goods{
     margin-top:15px;
+    padding:10px 0;
     background:#fff;
     border:1px solid #ccc;
 }
@@ -143,11 +144,15 @@
     padding:0 10px;
 }
 .goods_title h3{
-    width: 60%;
+    width: 82%;
+    height:36px;
+}
+.goods_title > a{
+    width:40px;
     height:36px;
 }
 .goods_title h3 img{
-    width: 40%;
+    width: 90px;
     height:36px;
 }
 .goods_title h3 .left_time{
@@ -191,4 +196,54 @@ strong{
 .goods_item ul li span.old{
     text-decoration: line-through;
     color:#ccc;
+}
+/*超市*/
+.shop{
+    margin-top:15px;
+    padding:5px 0 0;
+    background: #fff;
+    border:1px solid #ccc;
+}
+.shop .shop_title{
+    padding:0 15px 5px;
+    border-bottom:1px solid #ccc;
+}
+.shop .shop_title::before{
+    content:"|";
+    color:red;
+    margin-right:10px;
+    font-weight: bold;
+}
+.shop .shop_item .shop_item_left{
+    width:40%;
+    height:172px;
+    padding-left:10px;
+    border-right:1px solid #ccc;
+}
+.shop_item .shop_item_right{
+    width:50%;
+    margin-left:15px;
+}
+.shop_item .shop_item_right > div > div{
+    width:60%;
+}
+.shop_item .shop_item_right > div > div p{
+    margin-top:5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shop_item .shop_item_right  .down > div{
+    text-align: right;
+}
+.shop_item .shop_item_right > div > img{
+    width:40%;
+}
+.shop .shop_item h3{
+    color:red;
+    margin-top:5px;
+}
+.shop .shop_item img{
+    width:75px;
+    height:86px;
 }

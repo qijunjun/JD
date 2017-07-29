@@ -36,8 +36,11 @@ $(function(){
         var lefts =parseInt((future-now)/1000);
         var days = parseInt(lefts/86400);
         var hour =parseInt((lefts%86400)/3600)<1?"0"+parseInt((lefts%86400)/3600):parseInt((lefts%86400)/3600);
-        var min = parseInt(lefts%86400%3600/60);
+        var min = parseInt(lefts%86400%3600/60)>9?parseInt(lefts%86400%3600/60):"0"+parseInt(lefts%86400%3600/60);
         var sec = lefts%60>9?lefts%60:"0"+lefts%60;
+        if(lefts<0){
+           $(".left_time").hide();
+        }
         $("#hours").html(hour);
         $("#minutes").html(min);
         $("#seconds").html(sec);
