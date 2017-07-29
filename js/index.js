@@ -11,6 +11,7 @@ $(function(){
             $(".header").css({padding:"0"});
         }
     });
+    // 轮播图效果
    var mySwiper = new Swiper(".banner",{
        //滑动方向 horizontal  vertical
        direction: 'horizontal',
@@ -26,5 +27,22 @@ $(function(){
        autoplay:3000,
        //用户操作swiper后是否还自动播放，默认是true，不再自动播放
        autoplayDisableOnInteraction:false
-   }) 
+   }); 
+    // 倒计时效果
+    function Timeleft(){
+        var now = new Date();
+        var future = new Date(2017,6,29,24,0,0);
+        //把毫秒转换成秒
+        var lefts =parseInt((future-now)/1000);
+        var days = parseInt(lefts/86400);
+        var hour =parseInt((lefts%86400)/3600)<1?"0"+parseInt((lefts%86400)/3600):parseInt((lefts%86400)/3600);
+        var min = parseInt(lefts%86400%3600/60);
+        var sec = lefts%60>9?lefts%60:"0"+lefts%60;
+        $("#hours").html(hour);
+        $("#minutes").html(min);
+        $("#seconds").html(sec);
+
+    }
+    Timeleft();
+    setInterval(Timeleft,1000);
 });
