@@ -2,6 +2,13 @@
  * Created by 123 on 2017/7/29.
  */
 $(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() == 0){
+            $(".header").removeClass("scroll_header");
+        }else{
+            $(".header").addClass("scroll_header");
+        }
+    });
    var mySwiper = new Swiper(".banner",{
        //滑动方向 horizontal  vertical
        direction: 'horizontal',
