@@ -81,8 +81,19 @@
     top:0;
 }
 /*轮播图*/
+.banner .swiper-wrapper .swiper-slide{
+    font-size:0;
+}
 .banner .swiper-wrapper .swiper-slide img{
     width:100%;
+/*
+    解决图片下方4个像素的下边距，即图片高度比父元素高度少4个像素
+    第一种方法：分别包裹img标签的元素和img标签加display:block
+    第二种方法：给父元素加font-size:0;
+    第三种方法：给img标签加vertical-align:middle;
+*/
+    display: block;
+    vertical-align: middle;
 }
 .swiper-pagination-bullet{
     width:10px;
