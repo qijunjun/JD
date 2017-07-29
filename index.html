@@ -5,8 +5,99 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <title>首页</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-
+    <div class="jd_layout">
+        <div class="header clearfix">
+            <div class="logo float_left">
+                <img src="images/logo.png" alt="LOGO图">
+            </div>
+            <div class="input float_left">
+                <input type="text" placeholder="搜索">
+            </div>
+            <a class="float_right" href="">登录</a>
+        </div>
+        <div class="banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/banner_02.jpg"  alt="幻灯片图片01">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner_03.jpg" alt="幻灯片图片02">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner_04.jpg" alt="幻灯片图片03">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner_05.jpg" alt="幻灯片图片03">
+                    </div>
+                </div>
+                <!-- 小圆点分页 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href=""><img src="images/li02.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li03.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li04.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li05.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href=""><img src="images/li06.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li07.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li08.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+                <li>
+                    <a href=""><img src="images/li09.png" alt=""></a>
+                    <span>分类查询</span>
+                </li>
+            </ul>
+        </div>
+        <div class="goods">
+            <div class="goods_title clearfix">
+                <h3 class="float_left">
+                    <img class="float_left" src="images/seconds.png" alt="">
+                    <span class="float_left">12:23:32</span>
+                </h3>
+                <a class="float_right" href="">更多&gt;</a>
+            </div>
+            <div class="goods_item">
+                <ul>
+                    <li>
+                        <a href=""><img src="images/" alt=""></a>
+                        <span class="now">&yen;10.00</span>
+                        <span class="old">&yen;12.00</span>
+                    </li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

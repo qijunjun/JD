@@ -1,0 +1,105 @@
+/*主体盒子*/
+.jd_layout{
+    width:100%;
+    /*设计图的原因，不然它会放大*/
+    max-width:640px;
+    /*为了更好的*/
+    min-width:300px;
+    margin:0 auto;
+    background: #d3d3d3;
+    height:1000px;
+}
+/*头部logo和搜索框*/
+.header{
+    width:96%;
+    height:32px;
+    line-height: 32px;
+    margin:3% 2%;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+}
+.header .logo{
+    width:10%;
+    height:32px;
+}
+.header .logo img{
+    width:100%;
+    height:26px;
+    margin-top:3px;
+}
+.header .input{
+    width:76%;
+    height:32px;
+    margin-left:2%;
+    margin-right:2%;
+    background: #fff;
+    border-radius:20px;
+}
+.header .input input{
+    width:100%;
+    height:32px;
+    background: url('../images/search.png') 10px center no-repeat;
+    background-size: 20px;
+    text-indent: 36px;
+}
+.header .input input:before{
+    content:"11";
+
+}
+.header a{
+    width:10%;
+    text-align: center;
+    color:#fff;
+    text-decoration: none;
+}
+/*轮播图*/
+.banner .swiper-wrapper .swiper-slide img{
+    width:100%;
+}
+.swiper-pagination-bullet{
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    background: none;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+}
+/*分类列表*/
+.list{
+    padding:2% 5%;
+    background: #fff;
+}
+.list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.list ul li{
+    width:20%;
+}
+.list ul li a,.list ul li span{
+    display: block;
+    text-align: center;
+}
+.list ul li img{
+    width: 100%;
+}
+/*商品秒杀列表*/
+.goods{
+    margin-top:15px;
+    background:#fff;
+    border:1px solid #ccc;
+}
+.goods_title{
+    height:36px;
+    line-height: 36px;
+}
+.goods_title h3{
+    width: 60%;
+    height:36px;
+}
+.goods_title h3 img{
+    width: 40%;
+    height:36px;
+}
