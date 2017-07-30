@@ -30,6 +30,45 @@ input{
 ul{
     list-style: none;
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.border_l{
+    border-left:1px solid #e0e0e0;
+}
+.border_r{
+    border-right:1px solid #e0e0e0;
+}
+.border_t{
+    border-top:1px solid #e0e0e0;
+}
+.border_b{
+    border-bottom:1px solid #e0e0e0;
+}
+.padding{
+    padding:15px;
+}
+.margin{
+    margin:15px;
+}
+.m_l15{
+    margin-left:15px;
+}
+.m_r15{
+    margin-right:15px;
+}
+.m_b15{
+    margin-bottom:15px;
+}
+.m_t15{
+    margin-top:15px;
+}
 .float_left{
     float:left;
 }

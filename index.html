@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="jd_layout">
-        <div class="header clearfix">
+        <header class="header clearfix">
             <div class="header_box">
                 <a class="logo float_left">
                     <img src="images/logo.png" alt="LOGO图">
@@ -25,7 +25,7 @@
                 </form>
                 <a class="login float_right" href="javascript:void(0);">登录</a>
             </div>
-        </div>
+        </header>
         <div class="banner swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -80,66 +80,110 @@
                 </li>
             </ul>
         </nav>
-        <div class="goods">
-            <div class="goods_title clearfix">
-                <h3 class="float_left">
-                    <img class="float_left" src="images/seconds.png" alt="秒杀图片">
-                    <span class="left_time float_left">
+        <!--商品-->
+        <main>
+            <!--商品板块-->
+            <section  class="goods">
+                <!--商品标题-->
+                <div class="goods_title clearfix">
+                    <h3 class="float_left">
+                        <img class="float_left" src="images/seconds.png" alt="秒杀图片">
+                    <span class="left_time m_l15 float_left">
                         <b id="hours">20</b>
                         <strong>:</strong>
                         <b id="minutes">03</b>
                         <strong>:</strong>
                         <b id="seconds">09</b>
                     </span>
-                </h3>
-                <a class="float_right" href="javascript:void(0);">更多&gt;</a>
-            </div>
-            <div class="goods_item">
-                <ul class="clearfix">
-                    <li class="float_left">
-                        <a href="javascript:void(0);"><img src="images/goods_07.jpg" alt=""></a>
-                        <span class="now">&yen;10.00</span>
-                        <span class="old">&yen;12.00</span>
-                    </li>
-                    <li class="float_left">
-                        <a href="javascript:void(0);"><img src="images/goods_06.jpg" alt=""></a>
-                        <span class="now">&yen;10.00</span>
-                        <span class="old">&yen;12.00</span>
-                    </li>
-                    <li class="float_left">
-                        <a href="javascript:void(0);"><img src="images/goods_05.jpg" alt=""></a>
-                        <span class="now">&yen;10.00</span>
-                        <span class="old">&yen;12.00</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="shop">
-            <h3 class="shop_title">京东超市</h3>
-            <div class="shop_item clearfix">
-                <div class="shop_item_left float_left">
-                    <h3>手机专享</h3>
-                    <p>掌上特惠为您省</p>
-                    <img src="images/shop_02.jpg" alt="">
+                    </h3>
+                    <a class="float_right" href="javascript:void(0);">更多&gt;</a>
                 </div>
-                <div class="shop_item_right float_left">
-                    <div class="up clearfix">
-                        <div class="float_left">
-                            <h3>闪购</h3>
-                            <p>玩转羽毛轻盈保暖</p>
-                        </div>
-                        <img class="float_left" src="images/shop_03.jpg">
+                <!--商品内容-->
+                <div class="goods_item">
+                    <ul class="clearfix">
+                        <li class="float_left">
+                            <a href="javascript:void(0);"><img src="images/goods_07.jpg" alt=""></a>
+                            <span class="now">&yen;10.00</span>
+                            <span class="old">&yen;12.00</span>
+                        </li>
+                        <li class="float_left">
+                            <a href="javascript:void(0);"><img src="images/goods_06.jpg" alt=""></a>
+                            <span class="now">&yen;10.00</span>
+                            <span class="old">&yen;12.00</span>
+                        </li>
+                        <li class="float_left">
+                            <a href="javascript:void(0);"><img src="images/goods_05.jpg" alt=""></a>
+                            <span class="now">&yen;10.00</span>
+                            <span class="old">&yen;12.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--超市板块-->
+            <section  class="shop">
+                <!--超市标题-->
+                <h3 class="shop_title">京东超市</h3>
+                <!--超市内容块-->
+                <div class="shop_item clearfix">
+                    <div class="shop_item_left float_left">
+                        <h3>手机专享</h3>
+                        <p>掌上特惠为您省</p>
+                        <img src="images/goods_01.jpg" alt="">
                     </div>
-                    <div class="down clearfix">
-                        <img class="float_left" src="images/shop_03.jpg">
-                        <div class="float_left">
-                            <h3>闪购</h3>
-                            <p>1元试用团</p>
+                    <div class="shop_item_right border_l float_left">
+                        <div class="up border_b clearfix">
+                            <div class="float_left">
+                                <h3>闪购</h3>
+                                <p>玩转羽毛轻盈保暖</p>
+                            </div>
+                            <img class="float_left" src="images/shop_03.jpg">
+                        </div>
+                        <div class="down clearfix">
+                            <img class="float_left" src="images/shop_03.jpg">
+                            <div class="text-right float_left">
+                                <h3>闪购</h3>
+                                <p>1元试用团</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <section  class="shop">
+                <h3 class="shop_title">京东超市</h3>
+                <div class="shop_item clearfix">
+                    <div class="shop_item_left float_left">
+                        <h3>手机专享</h3>
+                        <p>掌上特惠为您省</p>
+                        <img src="images/goods_01.jpg" alt="">
+                    </div>
+                    <div class="shop_item_right border_l float_left">
+                        <div class="up border_b clearfix">
+                            <div class="float_left">
+                                <h3>闪购</h3>
+                                <p>玩转羽毛轻盈保暖</p>
+                            </div>
+                            <img class="float_left" src="images/shop_03.jpg">
+                        </div>
+                        <div class="down clearfix">
+                            <img class="float_left" src="images/shop_03.jpg">
+                            <div class="text-right float_left">
+                                <h3>闪购</h3>
+                                <p>1元试用团</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul class="clearfix">
+                <li><a href="javascript:void(0);"><img src="images/a-recommend.png" alt=""></a></li>
+                <li><a href="javascript:void(0);"><img src="images/n-catergry.png" alt=""></a></li>
+                <li><a href="javascript:void(0);"><img src="images/n-find.png" alt=""></a></li>
+                <li><a href="javascript:void(0);"><img src="images/n-cart.png" alt=""></a></li>
+                <li><a href="javascript:void(0);"><img src="images/n-me.png" alt=""></a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

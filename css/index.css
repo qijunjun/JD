@@ -131,20 +131,21 @@
     font-size:12px;
     padding:6px 0;
 }
-/*商品秒杀列表*/
-.goods{
+/*主内容*/
+main section{
     margin-top:15px;
-    padding:10px 0;
+    padding:10px 0 0;
     background:#fff;
-    border:1px solid #ccc;
+    box-shadow: 0 0 1px #e0e0e0;
 }
+/*商品秒杀列表*/
 .goods_title{
     height:36px;
     line-height: 36px;
     padding:0 10px;
+    margin-bottom:5px;
 }
 .goods_title h3{
-    width: 82%;
     height:36px;
 }
 .goods_title > a{
@@ -155,9 +156,7 @@
     width: 90px;
     height:36px;
 }
-.goods_title h3 .left_time{
-    margin-left:15px;
-}
+/*掌上秒杀*/
 .goods_title h3 .left_time b{
     background: #000;
     color:#fff;
@@ -176,8 +175,8 @@ strong{
     padding-right:12%;
 }
 .goods_item ul li:nth-child(2) a{
-    border-left:1px solid #ccc;
-    border-right:1px solid #ccc;
+    border-left:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
 }
 .goods_item ul li a{
     display: block;
@@ -197,35 +196,49 @@ strong{
     text-decoration: line-through;
     color:#ccc;
 }
-/*超市*/
-.shop{
-    margin-top:15px;
-    padding:5px 0 0;
-    background: #fff;
-    border:1px solid #ccc;
-}
+/*超市板块*/
+/*超市标题*/
 .shop .shop_title{
     padding:0 15px 5px;
-    border-bottom:1px solid #ccc;
+    border-bottom:1px solid #e0e0e0;
 }
 .shop .shop_title::before{
     content:"|";
-    color:red;
+    color:#d8505c;
     margin-right:10px;
     font-weight: bold;
 }
+/*超市内容*/
+/*超市左边*/
 .shop .shop_item .shop_item_left{
     width:40%;
-    height:172px;
+    height:180px;
     padding-left:10px;
-    border-right:1px solid #ccc;
+    position: relative;
 }
-.shop_item .shop_item_right{
-    width:50%;
-    margin-left:15px;
+.shop .shop_item .shop_item_left img{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:100px;
+    height:100px;
 }
-.shop_item .shop_item_right > div > div{
+.shop .shop_item h3{
+    color:red;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-weight: normal;
+}
+.shop .shop_item img{
+    width:75px;
+    max-height:100px;
+}
+/*超市右边*/
+.shop_item .shop_item_right,.shop_item .shop_item_right > div > div{
     width:60%;
+}
+.shop_item .shop_item_right > div{
+    padding:5px 15px;
 }
 .shop_item .shop_item_right > div > div p{
     margin-top:5px;
@@ -233,17 +246,26 @@ strong{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.shop_item .shop_item_right  .down > div{
-    text-align: right;
-}
 .shop_item .shop_item_right > div > img{
     width:40%;
 }
-.shop .shop_item h3{
-    color:red;
-    margin-top:5px;
+footer{
+    width:100%;
+    height:50px;
+    background:#fff;
+    position:fixed;
+    left:0;
+    bottom:0;
 }
-.shop .shop_item img{
-    width:75px;
-    height:86px;
+footer ul li{
+    width:20%;
+    float:left;
+}
+footer ul li a{
+    width:65px;
+    display: inline-block;
+    text-align: center;
+}
+footer ul li img{
+    width:100%;
 }

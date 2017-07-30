@@ -31,20 +31,21 @@ $(function(){
     // 倒计时效果
     function Timeleft(){
         var now = new Date();
-        var future = new Date(2017,6,29,24,0,0);
+        var future = new Date(2017,6,30,15,0,0);
         //把毫秒转换成秒
         var lefts =parseInt((future-now)/1000);
         var days = parseInt(lefts/86400);
-        var hour =parseInt((lefts%86400)/3600)<1?"0"+parseInt((lefts%86400)/3600):parseInt((lefts%86400)/3600);
+        var hour =parseInt((lefts%86400)/3600)<10?"0"+parseInt((lefts%86400)/3600):parseInt((lefts%86400)/3600);
         var min = parseInt(lefts%86400%3600/60)>9?parseInt(lefts%86400%3600/60):"0"+parseInt(lefts%86400%3600/60);
         var sec = lefts%60>9?lefts%60:"0"+lefts%60;
         if(lefts<0){
            $(".left_time").hide();
+        }else{
+            $("#hours").html(hour);
+            $("#minutes").html(min);
+            $("#seconds").html(sec);
+            $(".left_time").show();
         }
-        $("#hours").html(hour);
-        $("#minutes").html(min);
-        $("#seconds").html(sec);
-
     }
     Timeleft();
     setInterval(Timeleft,1000);
